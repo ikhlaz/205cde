@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="./dist/js/jquery-3.5.1.min.js"></script>
+  <script> $(function(){ $("head").load("head.html") });</script>
+</head>
+
+<body class="parallax">
+  <div class="content">
+    <!--Navigation bar-->
+    <header id="navigation" class="sticky-top">
+    </header>
+    <script>
+      $(function(){
+        $('#navigation').load('navigation.html');
+      });
+    </script>
+
+    <!-- Resources -->
+    <div class="container align-center bg-light custom_box">
+      <h1>ABOUT</h1>
+      <p class="bg-white textaligncustom" style="padding-left:1%;">
+        <br>
+        Freshwater lobsters are freshwater crustaceans resembling small lobsters (to which they are related). In some parts of the United States they are also known as crawfish, craydids, crawdaddies, crawdads, freshwater lobsters, mountain lobsters, mudbugs, or yabbies. Taxonomically, they are members of the superfamilies Astacoidea and Parastacoidea. They breathe through feather-like gills. Some species are found in brooks and streams where fresh water is running, while others thrive in swamps, ditches, and paddy fields. Most crayfish cannot tolerate polluted water, although some species such as Procambarus clarkii are hardier. Crayfish feed on animals and plants, either living or decomposing, and detritus.
+      </p>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="container-fluid bg-dark">
+    <script> 
+      $(function(){ 
+        $("footer").load("footer.html")
+      });
+    </script>
+  </footer>
+
+</body>
+</html>

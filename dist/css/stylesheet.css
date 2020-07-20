@@ -1,0 +1,77 @@
+h1, h2, h3, h4, h5, h6, p {
+    user-select: none; /* Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+  
+.content {
+    flex: 1;
+}
+
+.parallax {
+    background-image: url('../../img/background.png');
+    height: 100%; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.sliderimage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.custom_stroke
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+.custom_textalign {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align:left; 
+    text-align: justify;
+}
+
+.custom_box {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+}
+
+.outerDiv
+{
+	height: 100%;
+	width: 100%;
+	margin: 1% auto;
+}
+.leftDiv
+{
+	height: 100%;
+	width: 40%;
+	float: left;
+}
+.rightDiv
+{
+	height: 100%;
+    width: 58%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+	float: right;
+}
