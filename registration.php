@@ -2,7 +2,7 @@
     <body>
         <?php
             $id = uniqid();
-            $name = str_replace(" ", "_", $_POST["name"]);
+            $name = $_POST["name"];
             $telno = $_POST["telno"];
             $email = $_POST["email"];
 
@@ -22,7 +22,7 @@
                 die("Connection failed: " . $conn->connect_error);
             }
             
-            $sql = "INSERT INTO registry VALUES ('$id', '$name', $telno, '$email', $sex, $race, $state);";
+            $sql = "INSERT INTO registry VALUES ('$id', '$name', $telno, '$email', '$sex', $race, $state);";
 
             if ($conn->query($sql) === TRUE) {
                 /*echo "New record created successfully";*/
